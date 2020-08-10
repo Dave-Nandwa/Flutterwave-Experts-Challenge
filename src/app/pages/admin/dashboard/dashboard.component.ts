@@ -141,7 +141,7 @@ export class DashboardComponent implements OnInit {
             title: 'Error',
             text: err.message,
           }).then(() => {
-            this.router.navigateByUrl('/login');
+            this.router.navigateByUrl('/admin/login');
           });
         });
       } else {
@@ -151,7 +151,7 @@ export class DashboardComponent implements OnInit {
           title: 'Auth Error',
           text: 'Kindly Log In First.',
         }).then(() => {
-          this.router.navigateByUrl('/login');
+          this.router.navigateByUrl('/admin/login');
         });
       }
       userSub.unsubscribe();
