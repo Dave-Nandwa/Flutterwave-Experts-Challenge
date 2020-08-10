@@ -30,5 +30,29 @@ Special Thanks to Ekene, Ifunyama, Ace Kyd, Blessed for all the great insights a
 
 Looking forward to receiving your feedback!
 
+##Test Accounts
+If you don't want to go through the trouble of signing up here are some test accounts to use:
+User:
+
+dnandwa5@gmail.com
+pwd: minutemaid
+
+User Routes: 
+
+store ('/')
+login ('/login')
+signup ('/signup')
+========================
+Merchant:
+dnandwa50@gmail.com
+pwd: minutemaid
+
+Merchant Routes: 
+
+dashboard ('/admin/dashboard')
+login ('/admin/login')
+signup ('/admin/signup')
+========================
+
 ## Developer
 [David Nandwa](https://davidnandwa.com)
