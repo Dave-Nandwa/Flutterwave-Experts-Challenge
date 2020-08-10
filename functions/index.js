@@ -284,16 +284,16 @@ app.get("/create-virtual-card", (req, res) => {
     "amount": parseInt(amount),
     "billing_name": req.query.name,
     "billing_address": req.query.address,
-    "billing_city": 'Nairobi',
-    "billing_state": 'Nairobi',
-    "billing_postal_code": "284105",
     "billing_country": req.query.countryCode,
     "callback_url": req.query.callback
   }
   request({
     method: "POST",
     url: `https://api.flutterwave.com/v3/virtual-cards`,
-    headers: {},
+    headers: {
+      "Content-Type": 'application/json',
+      "Authorization": `Bearer ${SECRET_KEY}`
+    },
     json: body
   }, (err, response, body) => {
     if (err) {
