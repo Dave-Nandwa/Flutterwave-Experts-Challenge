@@ -30,67 +30,12 @@ import {
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  banks: any = [{
-      name: 'Citi Bank',
+  cards: any = [{
+      name: 'MasterCard',
       balance: 0,
       accountNo: '######0000',
       image: 'assets/imgs/mc.png',
 
-    },
-    {
-      name: 'Santander',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-1.png'
-    },
-    {
-      name: 'Deutsche Bank',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-3.png'
-    },
-    {
-      name: 'Credit Agricole',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-4.png'
-    },
-    {
-      name: 'Bank of America',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-5.png'
-    },
-    {
-      name: 'Chase Bank',
-      balance: 1000,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-6.png'
-    },
-    {
-      name: 'Barclays',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-7.png'
-    },
-    {
-      name: 'HSBC',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-8.png'
-    },
-    {
-      name: 'Wells Fargo',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-9.png'
-    },
-
-    {
-      name: 'Bank Mandiri',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/b-10.png'
     }
   ];
 

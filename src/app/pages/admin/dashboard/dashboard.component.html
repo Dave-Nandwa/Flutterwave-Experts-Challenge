@@ -157,10 +157,10 @@
 
     <!--- Card Block --->
     <div class="bank-block">
-      <div *ngFor="let bank of banks;let index = index" class="single_bank card-bg">
-        <h4>{{bank?.name}} <span><img src="{{bank?.image}}" alt=""></span></h4>
-        <p>{{bank?.accountNo}} <i class="zmdi zmdi-comment-outline"></i></p>
-        <h3>$ {{bank?.balance | number: '.2'}} <span><i class="zmdi zmdi-more-vert"></i></span></h3>
+      <div *ngFor="let card of cards;let index = index" class="single_bank card-bg">
+        <h4>{{card?.name}} <span><img src="{{card?.image}}" alt=""></span></h4>
+        <p>{{card?.accountNo}} <i class="zmdi zmdi-comment-outline"></i></p>
+        <h3>$ {{card?.balance | number: '.2'}} <span><i class="zmdi zmdi-more-vert"></i></span></h3>
       </div>
     </div>
     <!--- / Card Block --->
