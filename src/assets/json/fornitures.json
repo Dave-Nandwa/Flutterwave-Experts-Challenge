@@ -1,0 +1,93 @@
+{
+    "categories": ["Vases", "Shelves", "Chairs", "Lamp"],
+    "products": [
+        {
+            "id":1,
+            "category": "Vases",
+            "filters": "All, Vases",
+            "name": "Figure Gr",
+            "price": 12.49,
+            "quantity": 6,
+            "imported": 0,
+            "image": "./assets/images/products/forniture/1.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":2,
+            "category": "Lamp",
+            "filters": "All, Lamp",
+            "name": "Storage",
+            "price": 14.99,
+            "quantity": 4,
+            "imported": 0,
+            "image": "./assets/images/products/forniture/2.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":3,
+            "category": "Vases",
+            "filters": "All, Vases",
+            "name": "Plant",
+            "price": 0.85,
+            "quantity": 9,
+            "imported": 0,
+            "image": "./assets/images/products/forniture/3.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":4,
+            "category": "Chairs",
+            "filters": "All, Chairs",
+            "name": "Decor",
+            "price": 10.00,
+            "quantity": 6,
+            "imported": 1,
+            "image": "./assets/images/products/forniture/4.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":5,
+            "category": "Shelves",
+            "filters": "All, Shelves",
+            "name": "Shelves",
+            "price": 11.25,
+            "quantity": 8,
+            "imported": 1,
+            "image": "./assets/images/products/forniture/5.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":6,
+            "category": "Vases",
+            "filters": "All, Vases",
+            "name": "Br Vase",
+            "price": 47.50,
+            "quantity": 6,
+            "imported": 1,
+            "image": "./assets/images/products/forniture/6.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":7,
+            "category": "Vases",
+            "filters": "All, Vases",
+            "name": "Vase",
+            "price": 27.99,
+            "quantity": 6,
+            "imported": 1,
+            "image": "./assets/images/products/forniture/7.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":8,
+            "category": "Lamp",
+            "filters": "All, Lamp",
+            "name": "Lighting",
+            "price": 18.99,
+            "quantity": 16,
+            "imported": 0,
+            "image": "./assets/images/products/forniture/8.jpg",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        }
+    ]
+}

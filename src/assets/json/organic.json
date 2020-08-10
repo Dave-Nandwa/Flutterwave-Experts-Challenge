@@ -1,0 +1,93 @@
+{
+    "categories": ["Boxes", "Vegetables", "Fruits", "Seeds"],
+    "products": [
+        {
+            "id":1,
+            "category": "Fruits",
+            "filters": "All, Fruits",
+            "name": "Strawberries",
+            "price": 122.49,
+            "quantity": 6,
+            "imported": 0,
+            "image": "./assets/images/products/organic/1.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":2,
+            "category": "Vegetables",
+            "filters": "All, Vegetables",
+            "name": "Onions",
+            "price": 122.99,
+            "quantity": 4,
+            "imported": 0,
+            "image": "./assets/images/products/organic/2.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":3,
+            "category": "Vegetables",
+            "filters": "All, Vegetables",
+            "name": "Tomato",
+            "price": 85,
+            "quantity": 9,
+            "imported": 0,
+            "image": "./assets/images/products/organic/3.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":4,
+            "category": "Boxes",
+            "filters": "All, Boxes",
+            "name": "Vegetables",
+            "price": 746.00,
+            "quantity": 6,
+            "imported": 0,
+            "image": "./assets/images/products/organic/4.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":5,
+            "category": "Vegetables",
+            "filters": "All, Vegetables",
+            "name": "Broccoli",
+            "price": 11.25,
+            "quantity": 8,
+            "imported": 0,
+            "image": "./assets/images/products/organic/5.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":6,
+            "category": "Fruits",
+            "filters": "All, Fruits",
+            "name": "Peaches",
+            "price": 47.50,
+            "quantity": 6,
+            "imported": 0,
+            "image": "./assets/images/products/organic/6.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":7,
+            "category": "Vegetables",
+            "filters": "All, Vegetables",
+            "name": "Potatoes",
+            "price": 27.99,
+            "quantity": 6,
+            "imported": 0,
+            "image": "./assets/images/products/organic/7.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        },
+        {
+            "id":8,
+            "category": "Vegetables",
+            "filters": "All, Vegetables",
+            "name": "Egg Plant",
+            "price": 18.99,
+            "quantity": 16,
+            "imported": 0,
+            "image": "./assets/images/products/organic/8.png",
+            "description": "There are many variations of passages of Lorem Ipsum avaable, b majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. make an ami jani na."
+        }
+    ]
+}

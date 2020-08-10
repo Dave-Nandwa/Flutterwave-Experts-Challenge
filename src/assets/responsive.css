@@ -1,0 +1,276 @@
+@media (max-width: 767px) {
+    .dashboard-wrapper .saving-display .save_item:nth-child(1),
+    .dashboard-wrapper .saving-display .save_item:nth-child(2),
+    .dashboard-wrapper .bank-block .single_bank,
+    .dashboard-wrapper .transaction-display .tran-item:nth-child(1),
+    .dashboard-wrapper .transaction-display .tran-item:nth-child(2) {
+        width: calc(100% - 16px)!important;
+        padding: 20px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info h3 {
+        font-size: 13px!important;
+        margin-top: 12px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info h3 span {
+        font-size: 22px!important;
+        float: left!important;
+        margin-bottom: 10px;
+    }
+    .dashboard-wrapper .saving-display .account_info h5 {
+        margin: 4px 0 5px!important;
+        font-size: 12px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info ul li {
+        margin-right: 6px!important;
+    }
+    .btn-custom {
+        padding: 9px 13px!important;
+        font-size: 12px!important;
+    }
+    .dashboard-wrapper .saving-display .calender-preview h3 {
+        font-size: 16px!important;
+    }
+    .dashboard-wrapper .saving-display .calender-preview img {
+        width: 50px!important;
+        bottom: -48px!important;
+    }
+    .dashboard-wrapper .saving-display .calender-preview p {
+        margin-top: 11px!important;
+        font-size: 11px!important;
+        line-height: 18px!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h4 {
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h3 {
+        font-size: 17px!important;
+        margin-bottom: 0!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h4 span img {
+        width: 36px!important;
+        right: 20px!important;
+        top: 15px!important;
+    }
+    .dashboard-wrapper .transaction-display .chart-info .process-money li h5 {
+        font-size: 16px!important;
+    }
+    .dashboard-wrapper .transaction-display .tran-item h4 {
+        font-size: 16px!important;
+    }
+    .dashboard-wrapper .transaction-display .chart-info .chart-flow img {
+        width: 100%!important;
+    }
+    .dashboard-wrapper .transaction-display {
+        padding-bottom: 0!important;
+    }
+    .header-wrapper .menu_wrap .single-menu {
+        width: calc(100% - 16px)!important;
+    }
+    .header-wrapper .menu_wrap .single-menu ul li {
+        font-size: 10px!important;
+        padding: 3px 5px!important;
+    }
+    .header-wrapper .menu_wrap .menu-left ul li:nth-child(1) img {
+        width: 80px!important;
+    }
+    .header-wrapper .menu_wrap .menu-right ul li {
+        font-size: 13px!important;
+    }
+    .header-wrapper .menu_wrap .menu-right ul li:nth-child(4) {
+        margin: 0 17px!important;
+        font-size: 11px!important;
+    }
+    .header-wrapper .menu_wrap .menu-right {
+        text-align: center!important;
+        padding-top: 10px!important;
+    }
+    .header-wrapper .menu_wrap .menu-left ul li:nth-child(1) {
+        margin-right: 0!important;
+        width: 100%!important;
+        text-align: center!important;
+    }
+    .header-wrapper .menu_wrap .single-menu ul {
+        text-align: center!important;
+    }
+    .header-wrapper .menu_wrap .single-menu {
+        padding-bottom: 0!important;
+    }
+    .dashboard-wrapper[_ngcontent-tgh-c16] .saving-display[_ngcontent-tgh-c16] {
+        padding-top: 20px!important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .dashboard-wrapper .saving-display .save_item:nth-child(1),
+    .dashboard-wrapper .saving-display .save_item:nth-child(2),
+    .dashboard-wrapper .bank-block .single_bank,
+    .dashboard-wrapper .transaction-display .tran-item:nth-child(1),
+    .dashboard-wrapper .transaction-display .tran-item:nth-child(2) {
+        padding: 20px!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank {
+        width: calc(50% - 16px)!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h3 {
+        font-size: 18px!important;
+        margin-bottom: 0!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h4 {
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .transaction-display .table-info table tbody tr td {
+        font-size: 11px!important;
+    }
+    .dashboard-wrapper .transaction-display .table-info table tbody tr td p {
+        font-size: 11px!important;
+    }
+    .dashboard-wrapper .transaction-display .chart-info .process-money li p {
+        font-size: 10px!important;
+    }
+    .dashboard-wrapper .transaction-display .chart-info .process-money li h5 {
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .transaction-display .tran-item h4 {
+        font-size: 15px!important;
+    }
+    .dashboard-wrapper[_ngcontent-dlq-c16] .transaction-display[_ngcontent-dlq-c16] .chart-info[_ngcontent-dlq-c16] .chart-flow[_ngcontent-dlq-c16] h6[_ngcontent-dlq-c16] {
+        margin: 0 0 10px!important;
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .transaction-display .chart-info .chart-flow h6 span i {
+        font-size: 20px!important;
+    }
+    .dashboard-wrapper .transaction-display .tran-item h4 span i {
+        width: 24px!important;
+        height: 24px!important;
+        font-size: 14px!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h4 span img {
+        width: 32px!important;
+        right: 17px!important;
+        top: 20px!important;
+    }
+    .dashboard-wrapper .saving-display .calender-preview h3 {
+        margin-bottom: 1px!important;
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .saving-display .calender-preview p {
+        margin-top: 16px!important;
+        font-size: 11px!important;
+        line-height: 18px!important;
+        margin-bottom: 8px!important;
+    }
+    .btn-custom {
+        padding: 8px 13px!important;
+        font-size: 12px!important;
+    }
+    .dashboard-wrapper .saving-display .calender-preview img {
+        width: 50px!important;
+        bottom: 0!important;
+        right: 5px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info h3 {
+        font-size: 13px!important;
+        margin-top: 9px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info h5 {
+        margin: 4px 0 9px!important;
+        font-size: 12px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info h3 span {
+        font-size: 19px!important;
+        top: -3px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info h6 {
+        font-size: 11px!important;
+    }
+    .dashboard-wrapper .transaction-display .table-info table tbody tr td:nth-child(3) {
+        font-size: 10px!important;
+    }
+    .dashboard-wrapper .transaction-display .table-info table tbody tr td:nth-child(2) {
+        font-size: 10px!important;
+    }
+    .header-wrapper .menu_wrap .menu-right ul li {
+        font-size: 13px!important;
+    }
+    .header-wrapper .menu_wrap .menu-right ul li:nth-child(4) {
+        margin: 0 5px!important;
+        font-size: 11px!important;
+    }
+    .header-wrapper .menu_wrap .single-menu ul li {
+        font-size: 10px!important;
+        padding: 2px 8px!important;
+    }
+    .header-wrapper .menu_wrap .menu-left ul li:nth-child(1) img {
+        width: 70px!important;
+    }
+    .header-wrapper .menu_wrap .menu-left ul li:nth-child(1) {
+        margin-right: 20px!important;
+    }
+    .header-wrapper .menu_wrap .single-menu:nth-child(1) {
+        width: calc(63% - 16px)!important;
+    }
+    .header-wrapper .menu_wrap .single-menu:nth-child(2) {
+        width: calc(40% - 16px)!important;
+    }
+    .dashboard-wrapper .saving-display {
+        padding-top: 20px!important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header-wrapper .menu_wrap .menu-right ul li {
+        font-size: 13px!important;
+    }
+    .header-wrapper .menu_wrap .menu-right ul li:nth-child(4) {
+        margin: 0 5px!important;
+        font-size: 13px!important;
+    }
+    .header-wrapper .menu_wrap .single-menu ul li {
+        font-size: 13px!important;
+        padding: 2px 8px!important;
+    }
+    .header-wrapper .menu_wrap .menu-right ul li {
+        font-size: 15px!important;
+    }
+    .header-wrapper .menu_wrap .menu-left ul li:nth-child(1) img {
+        width: 70px!important;
+    }
+    .header-wrapper .menu_wrap .menu-left ul li:nth-child(1) {
+        margin-right: 20px!important;
+    }
+    .header-wrapper .menu_wrap .single-menu:nth-child(1) {
+        width: calc(63% - 16px)!important;
+    }
+    .header-wrapper .menu_wrap .single-menu:nth-child(2) {
+        width: calc(40% - 16px)!important;
+    }
+    .dashboard-wrapper .saving-display {
+        padding-top: 20px!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h3 {
+        font-size: 18px!important;
+        margin-bottom: 0!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h4 {
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .bank-block .single_bank h4 span img {
+        width: 30px!important;
+    }
+    .btn-custom {
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .transaction-display .tran-item h4 {
+        font-size: 17px!important;
+    }
+    .dashboard-wrapper .transaction-display .chart-info .process-money li h5 {
+        font-size: 16px!important;
+    }
+    .dashboard-wrapper .transaction-display .chart-info .chart-flow h6 {
+        margin: 2px 0 15px!important;
+        font-size: 13px!important;
+    }
+    .dashboard-wrapper .saving-display .account_info h3 {
+        font-size: 15px!important;
+    }
+}

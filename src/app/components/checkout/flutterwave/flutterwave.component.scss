@@ -1,0 +1,20 @@
+
+@import "../../../../_sass/_variables.scss";
+/* ../../../../_sass/_variables */
+
+.btn-fwave {
+    border-radius: 25px;
+    padding: 10px 35px;
+    font-weight: 600;
+    color:#fff;
+    cursor: pointer;
+    background: #F5A623;
+    border:1px solid #F5A623;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    @media (max-width: $sm-device) {
+        width:100%;
+        margin-bottom:20px;
+    }
+}

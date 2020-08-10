@@ -1,0 +1,37 @@
+
+@import "../../../_sass/_variables";
+
+.box-drop{
+
+    svg{
+        display: inline-block;
+        width: 30px;
+    }
+
+    .btn{
+        font-size:14px;
+        padding:0;
+        
+        @media (max-width: $mg-device) { 
+            font-size: 13px;
+        }
+
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+
+.box-total{
+
+    .total-price{
+        margin-bottom:0px;
+    }
+}
+
+.box-cart-trash{
+
+    svg{
+        margin-top:20px;
+    }
+}

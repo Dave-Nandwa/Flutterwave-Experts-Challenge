@@ -1,0 +1,36 @@
+
+@import "../../../_sass/_variables";
+
+.navigation{
+    padding-top:25px;
+    
+    .box-title{
+
+        .logo{
+            margin-bottom:0;
+            font-weight: 800;
+            
+            a{
+                color:#2f343f;
+
+                span{
+                    color:$firstColor;
+                }
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            
+            
+        }
+
+        .sub-title{
+            font-size:12px;
+        }
+    }
+
+    .box-cart{
+        padding-top: 8px;
+    }
+}

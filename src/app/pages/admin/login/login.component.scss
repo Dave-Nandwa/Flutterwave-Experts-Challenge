@@ -1,0 +1,79 @@
+// 
+// authentication.scss
+//
+
+// Color system
+
+$white:    #fff;
+$gray-100: #212529;
+$gray-200: #323742;
+$gray-300: #3b414e;
+$gray-400: #576073;
+$gray-500: #6b768d;
+$gray-600: #8790a4;
+$gray-700: #a1a8b8;
+$gray-800: #bcc1cc;
+$gray-900: #d6d9e0;
+$black:    #000;
+
+// authentication pages background
+body {
+  &.authentication-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+  }
+}
+
+
+.authentication-form {
+  .form-group {
+    .input-group-text {
+      background-color: transparent;
+
+      i-feather,
+      svg {
+        height: 22px;
+        width: 22px;
+      }
+    }
+  }
+}
+
+.icon-fb {
+  color: #3c5a98;
+}
+
+.icon-google {
+  color: #e94134;
+}
+
+.auth-page-sidebar {
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1581631059710-7b30fcd0e8d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+
+  .overlay {
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($black, .4);
+  }
+
+  .auth-user-testimonial {
+    text-align: center;
+    color: $white;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+  }
+}

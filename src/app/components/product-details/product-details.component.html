@@ -1,0 +1,28 @@
+
+
+<section class="single-prod">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="box-img">
+          <img src="{{item.image}}" alt=""/>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="box-desc">
+          <p class="name">{{item.name}}</p>
+          <p class="price">{{item.price | currency:currency_code:'symbol-narrow':'1.2-2'}}</p>
+          <p class="description">{{item.description}}</p>
+
+          <p>Imported: {{item.imported == '0' ? 'NO' : 'SI' }}</p>
+
+          <div class="like-icon">
+              <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i>tweet</a>
+              <a class="pinterest" href="#"><i class="fa fa-pinterest"></i>save</a>
+              <a class="google" href="#"><i class="fa fa-google-plus"></i>share</a>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</section>

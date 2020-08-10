@@ -1,0 +1,10 @@
+
+@import "../_sass/_variables";
+
+.container{
+    min-height: 100%;
+
+    @media (max-width: $sm-device) {
+        max-width:100%;
+    }
+}

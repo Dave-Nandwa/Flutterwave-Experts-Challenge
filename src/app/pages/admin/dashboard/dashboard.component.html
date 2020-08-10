@@ -1,0 +1,172 @@
+<div class="header-wrapper">
+  <div class="container">
+    <div class="menu_wrap">
+      <div class="single-menu menu-left">
+        <ul>
+          <li><img src="assets/imgs/figtree-logo.png" alt=""> </li>
+          <li class="active"><a href="#">Merchant Dashboard</a></li>
+          <li (click)="logOut()" class="red"><a href="#" style="color: rgb(189, 15, 15)!important;">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dashboard-wrapper">
+  <div class="container">
+    <!--- Saving Display --->
+    <div class="saving-display">
+      <div class="save_item card-bg account_info">
+        <h6>Main account <span>Available funds</span></h6>
+        <h3>Your Earnings <span>$ {{userData?.balance | number: '.2'}}</span></h3>
+        <h5>ACC ID: {{userData?.userId}}</h5>
+
+        <ul>
+          <li><a class="top-card-links btn-custom btn-green">Create Virtual Card</a></li>
+        </ul>
+
+
+      </div>
+      <div class="save_item card-bg calender-preview">
+        <h3>Technical Support</h3>
+        <div class="row">
+          <div class="col-md-9">
+            <p>If you need to ask a quick question or are unsure about anything feel free to reach out.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img src="assets/imgs/support.png" alt="">
+          </div>
+        </div>
+
+
+        <a href="https://tawk.to/chat/5f29ee59ed9d9d2627083647/default" target="_blank"
+          class="btn-custom btn-white">Contact Support</a>
+      </div>
+    </div>
+    <!--- /Saving Display --->
+
+    <!--- Transaction Display --->
+    <div class="transaction-display">
+      <div class="tran-item card-bg table-info">
+        <h4>Latest Store Transactions</h4>
+        <div class="tran_content">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <td>
+                  Date
+                </td>
+                <td>
+                  Customer
+                </td>
+                <td>
+                  Amount
+                </td>
+                <td>
+                  Currency
+                </td>
+                <!-- <td>
+                  Quantity
+                </td> -->
+                <td>
+                  Status
+                </td>
+                <td>
+                  Country
+                </td>
+
+              </thead>
+              <tbody>
+                <tr *ngFor="let tran of transactions">
+                  <td>{{tran?.when}}</td>
+                  <td>{{tran?.userEmail}}</td>
+                  <td><b>{{tran?.amount | number: '.2'}}</b></td>
+                  <td><b>{{tran?.currency}}</b></td>
+                  <!-- <td>{{tran?.quantity}}</td> -->
+                  <td>
+                    <p *ngIf="tran?.status === 'pending'" class="orange"><span></span>PENDING</p>
+                    <p *ngIf="tran?.status === 'successful'" class="lightgreen"><span></span>SUCCESSFUL</p>
+                    <p *ngIf="tran?.status === 'failed'" class="lightgreen"><span></span>FAILED</p>
+                  </td>
+                  <td>{{tran?.country}}</td>
+                  <!-- <td><a href="#"><i class="zmdi zmdi-chevron-down"></i></a></td> -->
+                </tr>
+              </tbody>
+            </table>
+            <!-- <div class="table-bottom">
+                <a href="#">See More<i _ngcontent-bjj-c16="" class="zmdi zmdi-long-arrow-right"></i></a>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- /Transaction Display --->
+
+    <!--- User Display --->
+    <div class="transaction-display">
+      <div class="tran-item card-bg table-info">
+        <h4>Customers</h4>
+        <div class="tran_content">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <td>
+                  Name
+                </td>
+                <td>
+                  Email
+                </td>
+                <td>
+                  Phone
+                </td>
+                <td>
+                  Currency
+                </td>
+                <td>
+                  Country
+                </td>
+                <td>
+                  Amount Spent
+                </td>
+                <td>
+                  Card
+                </td>
+              </thead>
+              <tbody>
+                <tr *ngFor="let user of users">
+                  <td>{{user?.fullName}}</td>
+                  <td>{{user?.email}}</td>
+                  <td>{{user?.locale.internationalNumber}}</td>
+                  <td><b>{{user?.currency}}</b></td>
+                  <td><b>{{user?.locale?.countryCode}}</b></td>
+                  <td><b>{{user?.amountSpent | number: '.2'}}</b></td>
+                  <td>
+                    <button (click)="createVirtualCard(user)" class="success-btn">Issue Card</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <div class="table-bottom">
+                    <a href="#">See More<i _ngcontent-bjj-c16="" class="zmdi zmdi-long-arrow-right"></i></a>
+                  </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- /Transaction Display --->
+
+    <!--- Card Block --->
+    <div class="bank-block">
+      <div *ngFor="let bank of banks;let index = index" class="single_bank card-bg">
+        <h4>{{bank?.name}} <span><img src="{{bank?.image}}" alt=""></span></h4>
+        <p>{{bank?.accountNo}} <i class="zmdi zmdi-comment-outline"></i></p>
+        <h3>$ {{bank?.balance | number: '.2'}} <span><i class="zmdi zmdi-more-vert"></i></span></h3>
+      </div>
+    </div>
+    <!--- / Card Block --->
+
+
+
+  </div>
+</div>
+<ngx-spinner></ngx-spinner>
