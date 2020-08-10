@@ -13,8 +13,9 @@ npm intsall
 ## Project Structure
 
 ```python
-#Node.js backend
+#Node.js backend storing all the endpoints and webhooks.
 functions/
+#Source Folder for the Angular application
 src/
     app/
        models/
