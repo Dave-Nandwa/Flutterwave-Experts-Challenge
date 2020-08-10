@@ -13,14 +13,14 @@
 </div>
 <div class="dashboard-wrapper">
   <div class="container">
-    <!--- Balance Display --->
+    <!--- Account Display --->
     <div class="saving-display">
       <div class="save_item card-bg account_info">
         <h6>Main account <span>Available funds</span></h6>
-        <h3>Your Earnings <span>$ {{userData?.balance | number: '.2'}}</span></h3>
+        <h3>Total Earnings: <span> {{compoundTotal | number: '.2'}}</span></h3>
         <h5>ACC ID: {{userData?.userId}}</h5>
 
-        <ul>
+        <ul> 
           <li><a class="top-card-links btn-custom btn-green">Create Virtual Card</a></li>
         </ul>
 
@@ -43,14 +43,14 @@
           class="btn-custom btn-white">Contact Support</a>
       </div>
     </div>
-    <!--- /Balance Display --->
+    <!--- /Account Display --->
 
     <!--- Card Block --->
     <div class="bank-block">
       <div *ngFor="let card of cards;let index = index" class="single_bank card-bg">
         <h4>{{card?.name}} <span><img src="{{card?.image}}" alt=""></span></h4>
-        <p>{{card?.accountNo}} <i class="zmdi zmdi-comment-outline"></i></p>
-        <h3>$ {{card?.balance | number: '.2'}} <span><i class="zmdi zmdi-more-vert"></i></span></h3>
+        <p>{{card?.accountNo}}</p>
+        <h3>$ {{card?.balance | number: '.2'}}</h3>
       </div>
     </div>
     <!--- / Card Block --->

@@ -30,18 +30,26 @@ import {
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  //Not able to generate them in sandbox, proof of concept for display purposes
   cards: any = [{
-      name: 'MasterCard',
-      balance: 0,
-      accountNo: '######0000',
-      image: 'assets/imgs/mc.png',
+    name: "John's Loyalty Card",
+    balance: 0,
+    accountNo: '######0000',
+    image: 'assets/imgs/mc.png',
 
-    }
-  ];
+  }, 
+  {
+    name: "David's Loyalty Card",
+    balance: 293,
+    accountNo: '######0000',
+    image: 'assets/imgs/mc.png',
+  }];
 
   userData: any = {};
   transactions: any = [];
   users: any = [];
+  fetchedUser: any = {};
+  compoundTotal: number = 0;
   constructor(
     private authService: AuthService,
     private utils: UtilitiesService,
@@ -119,7 +127,8 @@ export class DashboardComponent implements OnInit {
       snapshot.forEach((doc) => {
         console.log(doc.data());
         this.transactions.push(doc.data());
-      })
+        this.compoundTotal += parseFloat(doc.data().amount)
+      });
     })
   }
 
@@ -134,22 +143,66 @@ export class DashboardComponent implements OnInit {
   }
 
   createVirtualCard(user) {
-    const obj = {
-      "currency": user.currency,
-      "amount": user.amount,
-      "name": user.fullName,
-      "address": user.address,
-      "country": user.countryCode,
-    }
-    this.dataServ.createVirtualCard(obj).subscribe((res) => {
-      console.log(res);
-    }, (err) => {
-      Swal.fire(
-        'Error',
-        err.message,
-        'error'
-      );
+    /* ------------------ Virtual Cards not Working in Sandbox, Left the Code in just for implementation proof ------------------ */
+    // My Payload is correct I was informed that Virtual Card issuing is not supported in the sandbox
+    Swal.fire(
+      'Virtual Cards Sandbox',
+      'Unfortunately Virtual Cards are down at the moment, please try again later.',
+      'error'
+    );
+    // const obj = {
+    //   "currency": user.currency,
+    //   "amount": user.amount,
+    //   "name": user.fullName,
+    //   "address": user.address,
+    //   "country": user.countryCode,
+    // }
+    // this.dataServ.createVirtualCard(obj).subscribe((res) => {
+    //   console.log(res);
+    // }, (err) => {
+    //   console.log(err);
+    //   Swal.fire(
+    //     'Error',
+    //     'Error Creating Virtual Card, please try again later.',
+    //     'error'
+    //   );
+    // })
+  }
+
+  getUserByEmail(email) {
+    this.spinner.show();
+    this.afs.collection('users', ref => ref.where('email', '==', email)).get().toPromise().then((snapshot) => {
+      this.spinner.hide();
+      snapshot.forEach((doc) => {
+        console.log(doc.data());
+        this.fetchedUser = (doc.data());
+        this.createVirtualCard(this.fetchedUser);
+      });
+
     })
+  }
+
+  /* ---------- Prompt Merchant For Email of Customer to Link Card To --------- */
+
+  async askForEmail() {
+    const {
+      value: formValue
+    } = await Swal.fire({
+      title: 'Multiple inputs',
+      html: '<input id="email-addr" placeholder="Customer Email" class="swal2-input">',
+      focusConfirm: false,
+      preConfirm: () => {
+        let emailInput: any = document.getElementById('email-addr');
+        return [
+          emailInput.value
+        ]
+      }
+    })
+
+    if (formValue) {
+      this.getUserByEmail(formValue[0])
+    }
+
   }
 
 }

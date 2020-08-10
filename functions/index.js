@@ -280,8 +280,8 @@ app.get("/payment-verification", (req, res) => {
 
 app.get("/create-virtual-card", (req, res) => {
   const body = {
-    "currency": req.query.currency,
-    "amount": parseInt(amount),
+    "currency": 'USD',
+    "amount": parseInt(req.query.amount),
     "billing_name": req.query.name,
     "billing_address": req.query.address,
     "billing_country": req.query.countryCode,

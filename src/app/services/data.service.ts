@@ -80,7 +80,10 @@ export class DataService {
     return this.http.get(`${this.endpoint}/create-virtual-card`, {
       observe: 'response',
       params: {
-        "currency": data.currency,
+
+        /* ----------- Decided to resort to all users having dollar cards ----------- */
+
+        // "currency": data.currency,
         "amount": data.amount,
         "name": data.name,
         "address": data.address,
