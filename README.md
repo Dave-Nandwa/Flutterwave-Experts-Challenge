@@ -7,7 +7,7 @@ I chose to build out the Personal Store Challenge and Transfers Challenge, this 
 Use the package manager [npm](https://www.npmjs.com/) to install the project
 
 ```bash
-npm intsall
+npm install
 ```
 
 ## Project Structure
@@ -30,28 +30,31 @@ Special Thanks to Ekene, Ifunyama, Ace Kyd, Blessed for all the great insights a
 
 Looking forward to receiving your feedback!
 
-##Test Accounts
+## Test Accounts
 If you don't want to go through the trouble of signing up here are some test accounts to use:
+======================
 User:
 
 dnandwa5@gmail.com
 pwd: minutemaid
 
 User Routes: 
-
+```
 store ('/')
 login ('/login')
 signup ('/signup')
+```
 ========================
 Merchant:
 dnandwa50@gmail.com
 pwd: minutemaid
 
 Merchant Routes: 
-
+```
 dashboard ('/admin/dashboard')
 login ('/admin/login')
 signup ('/admin/signup')
+```
 ========================
 
 ## Developer
