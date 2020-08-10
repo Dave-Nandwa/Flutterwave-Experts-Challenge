@@ -25,7 +25,7 @@ src/
        services/
 ```
 
-## Contributing
+## Thank You!
 Special Thanks to Ekene, Ifunyama, Ace Kyd, Blessed for all the great insights and help so far, it's my hope that we get to interact more in the future.
 
 Looking forward to receiving your feedback!
